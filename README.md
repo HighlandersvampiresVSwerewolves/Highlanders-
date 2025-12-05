@@ -64,3 +64,23 @@ This resulted in consistent dominance across maps during the tournament.
 ---
 
 ## 📁 4. Repository Structure
+/src
+client_socket.py # TCP communication
+state_update.py # Game state management
+combat.py # Probability model for battles
+pathfinding.py # Safe movement + threat avoidance
+move_generation.py # Move + split logic
+evaluation.py # State scoring function
+search.py # Alpha-Beta search
+main.py # Game orchestration
+
+
+## ▶️ 5. Running the AI
+
+### Requirements
+- Python 3.9+  
+- No external AI/graph/tree libraries  
+
+### Command
+```bash
+python3 main.py --ip <server_ip> --port <server_port>
